@@ -13,10 +13,10 @@ const Inquiry = () => {
       <>
           <Layout> 
               
-            <div className="font-raleway relative bg-[url('/inquery.png')] bg-no-repeat bg-cover w-full h-[378px] md:h-[783px] md:px-20 py-10">
+            <div className="  relative bg-[url('/inquery.png')] bg-no-repeat bg-cover w-full h-[378px] md:h-[783px] md:px-20 py-10">
                 <div className='absolute bottom-0 left-0 top-0 right-0 bg-overlay'>
                     <div className='md:w-[1440px] md:m-auto'>
-                        <div className='mt-16 p-10 text-center text-white font-raleway'>
+                        <div className='mt-16 p-10 text-center text-white  '>
                             <h2 className='uppercase font-bold text-[42px] pb-2'>Inquiry</h2>
                             <h6 className='uppercase font-bold text-[20px]'>Home -  Inquiry</h6>
                         </div>
@@ -24,7 +24,7 @@ const Inquiry = () => {
                 </div>
               </div>
 
-              <div className='container mx-auto'>
+              <div className='bg-[#F5F5F5] container mx-auto'>
                   <div className='grid md:grid-cols-2 grid-cols-1 justify-center items-center transform -translate-y-32 md:-translate-y-[369px]  md:px-20 px-5 gap-5'>
                   <div className="mb-5 md:mb-0 text-center w-max-[360px] py-2 bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.3)]">
                       
@@ -136,7 +136,7 @@ const Inquiry = () => {
                             TOGETHER
                         </h3>
                         <div className="p-2 w-full">
-                            <button className="font-raleway rounded-md font-bold bg-transparent text-white py-2 px-[50px] border-2 border-white hover:bg-orange-500 hover:border-orange-500 transition">
+                            <button className="  rounded-md font-bold bg-transparent text-white py-2 px-[50px] border-2 border-white hover:bg-orange-500 hover:border-orange-500 transition">
                                 CONTACT US <FontAwesomeIcon icon = {faChevronRight}/><FontAwesomeIcon className='ml-[-2px]' icon = {faChevronRight}/>
                             </button>
                         </div>

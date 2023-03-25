@@ -101,10 +101,10 @@ const Services = () => {
     <>
           <Layout>
               
-            <div className="font-raleway relative bg-[url('/priceDetailsBanner.png')] bg-no-repeat bg-cover w-full h-[378px] md:px-20 py-10 mb-10">
+            <div className="  relative bg-[url('/priceDetailsBanner.png')] bg-no-repeat bg-cover w-full h-[378px] md:px-20 py-10 mb-10">
                 <div className='absolute bottom-0 left-0 top-0 right-0 bg-overlay'>
                     <div className='md:w-[1440px] md:m-auto'>
-                        <div className='mt-16 p-10 text-center text-white font-raleway'>
+                        <div className='mt-16 p-10 text-center text-white  '>
                             <h2 className='uppercase font-bold text-[42px] pb-2'>Prizes</h2>
                             <h6 className='uppercase font-bold text-[20px]'>Home - Prizes</h6>
                         </div>
@@ -112,8 +112,8 @@ const Services = () => {
                 </div>
             </div>
                     
-        <div className='md:w-[1440px] md:m-auto'>
-            <main className="bg-slate-50 p-10">
+        <div className='md:m-auto bg-[#F5F5F5]'>
+            <main className="bg-slate-50 p-5 md:p-10 container mx-auto">
                       
                 <div className="text-center mb-10">
                     <h2 className="text-orange-500 uppercase font-bold md:text-[32px] text-2xl pb-3">Our Services PRICES</h2>

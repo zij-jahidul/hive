@@ -54,7 +54,7 @@ const PriceDetail = () => {
                 
             </div>
             <div className='md:w-[1440px] md:m-auto sm:m-auto m-10 py-10'>
-                <div className='w-full pr-0 pl-0 md:pl-0 mb-10 md:mb-0 md:pr-10 pt-10 text-center md:text-left'>
+                <div className='w-full pr-0 pl-0 md:pl-10 mb-10 md:mb-0 md:pr-10 pt-10 text-center md:text-left'>
                         <div className='mb-10 pb-10'>
                             <div className='mb-10 pb-10'>
                                 <img 
