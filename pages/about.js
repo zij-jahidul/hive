@@ -50,8 +50,8 @@ const About = () => {
               
             <div className="relative bg-[url('/priceDetailsBanner.png')] bg-no-repeat bg-cover w-full h-[378px] md:px-20 py-10 mb-10">
                 <div className='absolute bottom-0 left-0 top-0 right-0 bg-overlay'>
-                    <div data-aos = "fade-up" className='md:w-[1440px] md:m-auto'>
-                        <div className='mt-16 p-10 text-center text-white  '>
+                    <div data-aos = "fade-up" className='md:max-w-[1440px] md:m-auto'>
+                        <div className='mt-16 p-10 text-center text-white'>
                             <h2 className='uppercase font-bold text-[42px] pb-2'>About Us</h2>
                             <h6 className='uppercase font-bold text-[20px]'>Home -  About Us</h6>
                         </div>
@@ -59,15 +59,15 @@ const About = () => {
                 </div>
               </div>
               
-              <div className='bg-[#F5F5F5] container mx-auto'>
-                  <div className="w-full rounded bg-white p-10 lg:px-20 text-gray-800 relative md:text-left">
+              <div className='bg-[#F5F5F5] container-full mx-auto'>
+                  <div className="w-full rounded bg-white p-10 md:px-20 text-gray-800 relative md:text-left">
                     <div className="md:flex items-center -mx-10">
-                    <div data-aos = "fade-right" className="w-full md:w-2/5 md:px-10 px-5 mb-10 md:mb-0">
+                    <div data-aos = "fade-up" className="w-full md:w-2/5 md:px-10 px-5 mb-10 md:mb-0">
                         <div className="relative">
                             <Image src="/about.png" width={400} height = {659} className="md:w-[400px] relative z-10 md:h-[659px]" alt=""/>
                         </div>
                     </div>
-                    <div data-aos = "fade-left" className="w-full md:w-3/5 md:px-10 px-5 text-center md:text-left">
+                    <div data-aos = "fade-up" className="w-full md:w-3/5 md:px-10 px-5 text-center md:text-left">
                         <div className="mb-10">
                             <h4 className="text-orange-500 uppercase font-bold md:text-[32px] text-2xl pb-3">About us</h4>
                             <h5 className="font-bold uppercase md:text-[42px] text-4xl mb-5">Plumbing is what we do</h5>

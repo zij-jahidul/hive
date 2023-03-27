@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useRouter } from 'next/router';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-
+import { Autoplay, FreeMode, Pagination } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
@@ -55,7 +55,7 @@ export const ServicePrice = () => {
             }, []);
   return (
     <>
-        <main className='w-full rounded bg-[#F9F8F9] md:p-10 p-5 lg:px-20'>
+        <main className='w-full rounded bg-[#F9F8F9] md:p-10 p-5 md:px-20'>
             <div data-aos = "fade-up" className="text-center">
                 <h2 className="text-orange-500 uppercase font-bold md:text-[32px] leading-[36px] text-2xl pb-3">Our Services PRICES</h2>
                 <h2 className="font-bold uppercase md:text-[42px] text-4xl leading-[50px] mb-[40px]">Quality Service WITH STANDARD PRICES</h2>
@@ -68,8 +68,11 @@ export const ServicePrice = () => {
             <Swiper
             slidesPerView={3}
             spaceBetween={30}
-            freeMode={true}
-            autoplay = {{ delay: 1000 }}
+            loop={true}        
+            autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+            }}
             breakpoints={{
                 0: {
                     slidesPerView: 1,
@@ -83,12 +86,13 @@ export const ServicePrice = () => {
                     slidesPerView: 3,
                 },
             }}
+            modules={[Autoplay, FreeMode, Pagination]}
             // modules={[FreeMode, Pagination]}
             className="mySwiper"
         >
             {contents && contents.map((content, index) => (
                 <SwiperSlide className="py-10" key = {index}>
-                    <div data-aos = "fade-left" className={`shadow-[0_0_15px_2px_rgba(0,0,0,0.4)] ${index % 2 === 0 ? 'border-orange-500' : 'border-black'} text-center md:max-w-[430px] rounded-xl grid grid-cols-1 border-2 bg-white`}>
+                    <div data-aos = "fade-up" className={`shadow-[0_0_15px_2px_rgba(0,0,0,0.4)] ${index % 2 === 0 ? 'border-orange-500' : 'border-black'} text-center md:max-w-[430px] rounded-xl grid grid-cols-1 border-2 bg-white`}>
                         <div className={`rounded-xl ${index % 2 === 0 ? 'bg-orange-500' : 'bg-black'} text-white p-10`}>
                             <h1 className="uppercase font-bold text-[32px]">{content.rate}</h1>
                         </div>

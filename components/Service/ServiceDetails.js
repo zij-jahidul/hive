@@ -40,10 +40,11 @@ const ServiceDetails = () => {
     ];
   return (
     <>
+
         <main className=' '>
-            <div className="relative bg-[url('/priceDetailsBanner.png')] bg-no-repeat bg-cover w-full h-[378px] md:px-20 py-10 mb-10">
+            <div className="relative bg-[url('/priceDetailsBanner.png')] bg-no-repeat bg-cover w-full h-[378px] md:px-20 py-10">
                 <div className='absolute bottom-0 left-0 top-0 right-0 bg-overlay'>
-                    <div data-aos = "fade-up" className='md:w-[1440px] md:m-auto'>
+                    <div data-aos = "fade-up" className='md:max-w-[1440px] md:m-auto'>
                         <div className='mt-16 md:p-10 p-5 text-center text-white  '>
                             <h2 className='font-bold text-[42px] pb-2'>SERVICE DETAILS</h2>
                             <h6 className='font-bold text-[20px]'>HOME-SERVICES-SERVICE DETAILS</h6>
@@ -52,13 +53,13 @@ const ServiceDetails = () => {
                 </div>
               </div>
               
-            <div className='md:w-[1440px] md:m-auto sm:m-auto m-5 md:py-10 py-5'>
-                <div className='md:flex'>
-                    <div className='w-full md:w-[30%] md:pl-10 mb-10 md:mb-0 text-center md:text-left'>
+            <div className='bg-slate-50 p-5 md:px-20 container-full mx-auto'>
+                <div className='md:flex '>
+                    <div className='w-full md:max-w-[30%] md:pr-5 mb-10 md:mb-0 text-center md:text-left'>
                         <div className="my-10">
 
                             <div>
-                                <div data-aos = "fade-right" className="md:p-10 p-5 my-2 md:max-w-[350px] shadow-[0_0_15px_2px_rgba(0,0,0,0.3)]">
+                                <div data-aos = "fade-up" className="md:p-10 p-5 my-2 md:max-w-[350px] shadow-[0_0_15px_2px_rgba(0,0,0,0.3)]">
                                     <ul className="divide-y">
                                         <li className="cursor-pointer hover:bg-gray-100 hover:bg-opacity-20">
                                             <p className="  font-bold mx-4 py-4 text-[20px] mb-2 ">
@@ -262,7 +263,7 @@ const ServiceDetails = () => {
                         </div>
                         <div className='my-10'>
                             <div>
-                                <div data-aos = "fade-right" className="my-2 md:max-w-[350px] shadow-[0_0_15px_2px_rgba(0,0,0,0.3)] md:p-10 p-5">
+                                <div data-aos = "fade-up" className="my-2 md:max-w-[350px] shadow-[0_0_15px_2px_rgba(0,0,0,0.3)] md:p-10 p-5">
                                     <ul className="divide-y">
                                         <li className="border-0 hover:bg-gray-100 hover:bg-opacity-20">
                                             <p className=" font-bold mx-4 py-4 text-[20px] mb-2">
@@ -292,7 +293,7 @@ const ServiceDetails = () => {
                           
                         <div className='my-10'>
                             <div>
-                                <div data-aos = "fade-right" className="md:p-10 p-5 my-2 md:max-w-[350px] shadow-[0_0_15px_2px_rgba(0,0,0,0.3)]">
+                                <div data-aos = "fade-up" className="md:p-10 p-5 my-2 md:max-w-[350px] shadow-[0_0_15px_2px_rgba(0,0,0,0.3)]">
                                     <ul className="divide-y">
                                         <li className="border-0 hover:bg-gray-100 hover:bg-opacity-20">
                                             <p className="font-bold py-4 text-[20px] mb-2">
@@ -323,8 +324,8 @@ const ServiceDetails = () => {
                         </div>
                       </div>
                       
-                    <div className='w-full md:w-[70%] pr-0 pl-0 md:pl-0 md:mb-0 md:pr-10 md:pb-10 pt-10 text-center md:text-left'>
-                        <div data-aos = "fade-left" className='md:mb-10 mb-5 md:pb-10 pb-5'>
+                    <div className='w-full md:max-w-[70%] pr-0 pl-0 md:pl-5 md:mb-0 md:pr-0 md:pb-10 pt-10 text-center md:text-left'>
+                        <div data-aos = "fade-up" className='md:mb-10 mb-5 md:pb-10 pb-5'>
                             <div className='md:mb-10 md:pb-10'>
                                 <img 
                                     src = '/serviceDetails01.png'
@@ -357,7 +358,7 @@ const ServiceDetails = () => {
                                     one stop shop.</p>
                             </div>
                         </div>
-                        <div data-aos = "fade-left" className='mb-10 pb-10'>
+                        <div data-aos = "fade-up" className='mb-10 pb-10'>
                             <div className='mb-10 pb-10'>
                                 <img 
                                     src = '/serviceDetails02.png'

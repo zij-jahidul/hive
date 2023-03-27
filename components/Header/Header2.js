@@ -27,27 +27,27 @@ const Header2 = () => {
 
     return (
     <nav className="sticky top-0 z-50">
-        <div className="container mx-auto">
+        <div className="container-full mx-auto">
         {/* top bar number part starts */}
             <div className={`md:px-20 hidden bg-black md:py-5 md:flex md:w-auto md:flex-grow`}>
-                <div className='text-white text-xl   font-normal md:flex-grow'>
+                <div className='text-white text-xl font-normal md:flex-grow'>
                     Call Us: +43 660 3924728
                 </div>
                 <div className="text-white gt-sm">
                     <div className="text-sm md:flex-grow">
-                        <Link href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-orange-500 mr-[40px]">
+                        <Link href="#responsive-header" className="block mt-4 md:inline-block text-sm md:mt-0 text-white hover:text-orange-500 mr-[40px]">
                             <FontAwesomeIcon icon={faFacebookF} />
                         </Link>
-                        <Link href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-orange-500 mr-[40px]">
+                        <Link href="#responsive-header" className="block mt-4 md:inline-block text-sm md:mt-0 text-white hover:text-orange-500 mr-[40px]">
                             <FontAwesomeIcon icon={faInstagram} />
                         </Link>
-                        <Link href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-orange-500 mr-[40px]">
+                        <Link href="#responsive-header" className="block mt-4 md:inline-block text-sm md:mt-0 text-white hover:text-orange-500 mr-[40px]">
                             <FontAwesomeIcon icon={faTwitter} />
                         </Link>
-                        <Link href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-orange-500 mr-[40px]">
+                        <Link href="#responsive-header" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-orange-500 mr-[40px]">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </Link>
-                        <Link href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-orange-500">
+                        <Link href="#responsive-header" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-orange-500">
                             <FontAwesomeIcon icon={faYoutube} />
                         </Link>
                     </div>
@@ -58,24 +58,24 @@ const Header2 = () => {
                 <div className='md:flex-grow'>
                     <Image src="/hive.png" alt="hive-logo" width={200} height ={50} className="md:h-[50px] md:w-[200px] w-[200px] h-[50px]" />
                 </div>
-                <div className="hidden md:block text-black gt-sm pt-2">
+                <div className="hidden md:flex text-black gt-sm pt-2">
                     <div className="md:flex-grow text-base">
-                        <Link href="/" className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-500 mr-6">
+                        <Link href="/" className="block mt-4 md:inline-block text-sm md:mt-0 text-black hover:text-orange-500 mr-6">
                             Home
                         </Link>
-                        <Link href="/service" className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-500 mr-6">
+                        <Link href="/service" className="block mt-4 md:inline-block text-sm md:mt-0 text-black hover:text-orange-500 mr-6">
                             Services
                         </Link>
-                        <Link href="/prize" className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-500 mr-6">
+                        <Link href="/prize" className="block mt-4 md:inline-block text-sm md:mt-0 text-black hover:text-orange-500 mr-6">
                             Prizes
                         </Link>
-                        <Link href="/about" className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-500 mr-6">
+                        <Link href="/about" className="block mt-4 md:inline-block text-sm md:mt-0 text-black hover:text-orange-500 mr-6">
                             About Us
                         </Link>
-                        <Link href="/inquiry" className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-500 mr-6">
+                        <Link href="/inquiry" className="block mt-4 md:inline-block text-sm md:mt-0 text-black hover:text-orange-500 mr-6">
                             Inquery
                         </Link>
-                        <Link href="/contact" className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-orange-500">
+                        <Link href="/contact" className="block mt-4 md:inline-block text-sm md:mt-0 text-black hover:text-orange-500">
                             Contact
                         </Link>
                     </div>

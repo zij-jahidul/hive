@@ -2,12 +2,14 @@ import React, {useState, useEffect} from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import { Autoplay, FreeMode, Pagination } from "swiper";
 
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import 'swiper/css/autoplay';
 
 
 const Clients = () => {
@@ -37,6 +39,15 @@ const Clients = () => {
             img: '/1.png'
         },
         {
+            img: '/4.png'
+        },
+        {
+            img: '/2.png'
+        },
+        {
+            img: '/1.png'
+        },
+        {
             img: '/5.png'
         },
         {
@@ -48,7 +59,7 @@ const Clients = () => {
     }, []);
   return (
     <>
-        <main className='bg-[#F9F8F9] container mx-auto'>
+        <main className='bg-[#F9F8F9] container-full mx-auto'>
             <div className='md:p-20 p-10'>
                 <div data-aos = "fade-up" className="text-center">
                     <h2 className="text-orange-500 uppercase font-bold md:text-[32px] text-2xl">Our BIG CLINTS</h2>
@@ -60,8 +71,12 @@ const Clients = () => {
                 <Swiper
                 slidesPerView={7}
                 spaceBetween={30}
-                freeMode={true}
-                autoplay = {{ delay: 1000 }}
+                loop={true}     
+                autoplay={{
+                    delay: 1000,
+                    disableOnInteraction: false,
+                  }}
+                modules={[Autoplay, FreeMode, Pagination]}
                 breakpoints={{
                 0: {
                     slidesPerView: 3,
@@ -76,7 +91,7 @@ const Clients = () => {
                 },
             }}
                 // modules={[FreeMode, Pagination]}
-                className="mySwiper"
+                // className="mySwiper"
             >
                 {contents && contents.map((content, index) => (
                     <SwiperSlide className="py-10" key = {index}>
